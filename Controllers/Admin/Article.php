@@ -1,22 +1,15 @@
 <?php 
-namespace Controller\Admin;
+namespace Controllers\Admin;
 use Controller\Controller;
+use Model\DB;
 class Article extends Controller
 {
 	public function article_list()
 	{
-		$this->display('Article/article_list');
+		$this->display('Admin/Article/article_list');
 	}
-	public function article_add()
+	public function welcome()
 	{
-		$this->display('Article/article_add');
-	}
-	public function article_class()
-	{
-		$this->display('Article/article_class');
-	}
-	public function article_class_edit()
-	{
-		$this->display('Article/article_class_edit');
+		$this->display('Admin/Article/welcome');
 	}
 }

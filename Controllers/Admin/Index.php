@@ -2,7 +2,7 @@
 namespace Controllers\Admin;
 use Controller\Controller;
 use Model\DB;
-class index extends Controller
+class Index extends Controller
 {
 	public function index()
 	{
