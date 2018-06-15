@@ -4,12 +4,14 @@ use Controller\Controller;
 use Model\DB;
 class Article extends Controller
 {
+	//资讯管理
 	public function article_list()
 	{
 		$this->display('Admin/Article/article_list');
 	}
-	public function welcome()
+	//添加资讯
+	public function article_add()
 	{
-		$this->display('Admin/Article/welcome');
+		$this->display('Admin/Article/article_add');
 	}
 }

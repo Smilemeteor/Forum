@@ -36,9 +36,9 @@
 					<li class="dropDown dropDown_hover"><a href="javascript:;" class="dropDown_A"><i class="Hui-iconfont">&#xe600;</i> 新增 <i class="Hui-iconfont">&#xe6d5;</i></a>
 						<ul class="dropDown-menu menu radius box-shadow">
 							<li><a href="javascript:;" onclick="article_add('添加资讯','index.php?c=Article&a=article_add')"><i class="Hui-iconfont">&#xe616;</i> 资讯</a></li>
-							<li><a href="javascript:;" onclick="picture_add('添加资讯','picture-add.html')"><i class="Hui-iconfont">&#xe613;</i> 图片</a></li>
-							<li><a href="javascript:;" onclick="product_add('添加资讯','product-add.html')"><i class="Hui-iconfont">&#xe620;</i> 产品</a></li>
-							<li><a href="javascript:;" onclick="member_add('添加用户','member-add.html','','510')"><i class="Hui-iconfont">&#xe60d;</i> 用户</a></li>
+							<li><a href="javascript:;" onclick="picture_add('添加图片','index.php?c=Picture&a=picture_add')"><i class="Hui-iconfont">&#xe613;</i> 图片</a></li>
+							<li><a href="javascript:;" onclick="product_add('添加产品','index.php?c=Product&a=product_add')"><i class="Hui-iconfont">&#xe620;</i> 产品</a></li>
+							<li><a href="javascript:;" onclick="member_add('添加用户','index.php?c=Member&a=member_add','','510')"><i class="Hui-iconfont">&#xe60d;</i> 用户</a></li>
 					</ul>
 				</li>
 			</ul>
@@ -76,7 +76,7 @@
 			<dt><i class="Hui-iconfont">&#xe616;</i> 资讯管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
 			<dd>
 				<ul>
-					<li><a data-href="index.php?c=Admin&a=article_list" data-title="资讯管理" href="javascript:void(0)">资讯管理</a></li>
+					<li><a data-href="index.php?c=Article&a=article_list" data-title="资讯管理" href="javascript:void(0)">资讯管理</a></li>
 			</ul>
 		</dd>
 	</dl>
@@ -84,7 +84,7 @@
 			<dt><i class="Hui-iconfont">&#xe613;</i> 图片管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
 			<dd>
 				<ul>
-					<li><a data-href="picture-list.html" data-title="图片管理" href="javascript:void(0)">图片管理</a></li>
+					<li><a data-href="index.php?c=Picture&a=picture_list" data-title="图片管理" href="javascript:void(0)">图片管理</a></li>
 			</ul>
 		</dd>
 	</dl>
@@ -92,9 +92,9 @@
 			<dt><i class="Hui-iconfont">&#xe620;</i> 产品管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
 			<dd>
 				<ul>
-					<li><a data-href="product-brand.html" data-title="品牌管理" href="javascript:void(0)">品牌管理</a></li>
-					<li><a data-href="product-category.html" data-title="分类管理" href="javascript:void(0)">分类管理</a></li>
-					<li><a data-href="product-list.html" data-title="产品管理" href="javascript:void(0)">产品管理</a></li>
+					<li><a data-href="index.php?c=Product&a=product_brand" data-title="品牌管理" href="javascript:void(0)">品牌管理</a></li>
+					<li><a data-href="index.php?c=Product&a=product_category" data-title="分类管理" href="javascript:void(0)">分类管理</a></li>
+					<li><a data-href="index.php?c=Product&a=product_list" data-title="产品管理" href="javascript:void(0)">产品管理</a></li>
 			</ul>
 		</dd>
 	</dl>
@@ -103,7 +103,7 @@
 			<dd>
 				<ul>
 					<li><a data-href="http://h-ui.duoshuo.com/admin/" data-title="评论列表" href="javascript:;">评论列表</a></li>
-					<li><a data-href="feedback-list.html" data-title="意见反馈" href="javascript:void(0)">意见反馈</a></li>
+					<li><a data-href="feedback_list" data-title="意见反馈" href="index.php?c=Index&a=feedback_list">意见反馈</a></li>
 			</ul>
 		</dd>
 	</dl>
@@ -111,13 +111,13 @@
 			<dt><i class="Hui-iconfont">&#xe60d;</i> 会员管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
 			<dd>
 				<ul>
-					<li><a data-href="member-list.html" data-title="会员列表" href="javascript:;">会员列表</a></li>
-					<li><a data-href="member-del.html" data-title="删除的会员" href="javascript:;">删除的会员</a></li>
-					<li><a data-href="member-level.html" data-title="等级管理" href="javascript:;">等级管理</a></li>
-					<li><a data-href="member-scoreoperation.html" data-title="积分管理" href="javascript:;">积分管理</a></li>
-					<li><a data-href="member-record-browse.html" data-title="浏览记录" href="javascript:void(0)">浏览记录</a></li>
-					<li><a data-href="member-record-download.html" data-title="下载记录" href="javascript:void(0)">下载记录</a></li>
-					<li><a data-href="member-record-share.html" data-title="分享记录" href="javascript:void(0)">分享记录</a></li>
+					<li><a data-href="index.php?c=Member&a=member_list" data-title="会员列表" href="javascript:;">会员列表</a></li>
+					<li><a data-href="index.php?c=Member&a=member_del" data-title="删除的会员" href="javascript:;">删除的会员</a></li>
+					<!-- <li><a data-href="index.php?c=Member&a=member_level" data-title="等级管理" href="javascript:;">等级管理</a></li>
+					<li><a data-href="index.php?c=Member&a=member_scoreoperation" data-title="积分管理" href="javascript:;">积分管理</a></li> -->
+					<li><a data-href="index.php?c=Member&a=member_record_browse" data-title="浏览记录" href="javascript:void(0)">浏览记录</a></li>
+					<li><a data-href="index.php?c=Member&a=member_record_download" data-title="下载记录" href="javascript:void(0)">下载记录</a></li>
+					<li><a data-href="index.php?c=Member&a=member_record_share" data-title="分享记录" href="javascript:void(0)">分享记录</a></li>
 			</ul>
 		</dd>
 	</dl>
@@ -125,9 +125,9 @@
 			<dt><i class="Hui-iconfont">&#xe62d;</i> 管理员管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
 			<dd>
 				<ul>
-					<li><a data-href="admin-role.html" data-title="角色管理" href="javascript:void(0)">角色管理</a></li>
-					<li><a data-href="admin-permission.html" data-title="权限管理" href="javascript:void(0)">权限管理</a></li>
-					<li><a data-href="admin-list.html" data-title="管理员列表" href="javascript:void(0)">管理员列表</a></li>
+					<li><a data-href="index.php?c=Admin&a=admin_role" data-title="角色管理" href="javascript:void(0)">角色管理</a></li>
+					<li><a data-href="index.php?c=Admin&a=admin_permission" data-title="权限管理" href="javascript:void(0)">权限管理</a></li>
+					<li><a data-href="index.php?c=Admin&a=admin_list" data-title="管理员列表" href="javascript:void(0)">管理员列表</a></li>
 			</ul>
 		</dd>
 	</dl>
@@ -135,13 +135,13 @@
 			<dt><i class="Hui-iconfont">&#xe61a;</i> 系统统计<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
 			<dd>
 				<ul>
-					<li><a data-href="charts-1.html" data-title="折线图" href="javascript:void(0)">折线图</a></li>
-					<li><a data-href="charts-2.html" data-title="时间轴折线图" href="javascript:void(0)">时间轴折线图</a></li>
-					<li><a data-href="charts-3.html" data-title="区域图" href="javascript:void(0)">区域图</a></li>
-					<li><a data-href="charts-4.html" data-title="柱状图" href="javascript:void(0)">柱状图</a></li>
-					<li><a data-href="charts-5.html" data-title="饼状图" href="javascript:void(0)">饼状图</a></li>
-					<li><a data-href="charts-6.html" data-title="3D柱状图" href="javascript:void(0)">3D柱状图</a></li>
-					<li><a data-href="charts-7.html" data-title="3D饼状图" href="javascript:void(0)">3D饼状图</a></li>
+					<li><a data-href="index.php?c=Charts&a=charts_1" data-title="折线图" href="javascript:void(0)">折线图</a></li>
+					<li><a data-href="index.php?c=Charts&a=charts_2" data-title="时间轴折线图" href="javascript:void(0)">时间轴折线图</a></li>
+					<li><a data-href="index.php?c=Charts&a=charts_3" data-title="区域图" href="javascript:void(0)">区域图</a></li>
+					<li><a data-href="index.php?c=Charts&a=charts_4" data-title="柱状图" href="javascript:void(0)">柱状图</a></li>
+					<li><a data-href="index.php?c=Charts&a=charts_5" data-title="饼状图" href="javascript:void(0)">饼状图</a></li>
+					<li><a data-href="index.php?c=Charts&a=charts_6" data-title="3D柱状图" href="javascript:void(0)">3D柱状图</a></li>
+					<li><a data-href="index.php?c=Charts&a=charts_7" data-title="3D饼状图" href="javascript:void(0)">3D饼状图</a></li>
 			</ul>
 		</dd>
 	</dl>
@@ -149,11 +149,11 @@
 			<dt><i class="Hui-iconfont">&#xe62e;</i> 系统管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
 			<dd>
 				<ul>
-					<li><a data-href="system-base.html" data-title="系统设置" href="javascript:void(0)">系统设置</a></li>
-					<li><a data-href="system-category.html" data-title="栏目管理" href="javascript:void(0)">栏目管理</a></li>
-					<li><a data-href="system-data.html" data-title="数据字典" href="javascript:void(0)">数据字典</a></li>
-					<li><a data-href="system-shielding.html" data-title="屏蔽词" href="javascript:void(0)">屏蔽词</a></li>
-					<li><a data-href="system-log.html" data-title="系统日志" href="javascript:void(0)">系统日志</a></li>
+					<li><a data-href="system-base" data-title="系统设置" href="javascript:void(0)">系统设置</a></li>
+					<li><a data-href="system-category" data-title="栏目管理" href="javascript:void(0)">栏目管理</a></li>
+					<li><a data-href="system-data" data-title="数据字典" href="javascript:void(0)">数据字典</a></li>
+					<li><a data-href="system-shielding" data-title="屏蔽词" href="javascript:void(0)">屏蔽词</a></li>
+					<li><a data-href="system-log" data-title="系统日志" href="javascript:void(0)">系统日志</a></li>
 			</ul>
 		</dd>
 	</dl>
