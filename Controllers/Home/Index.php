@@ -6,7 +6,20 @@ class Index extends Controller
 {
 	public function index()
 	{
+		$db = new DB();
+		$data=$db->show('Home_index');
+		$this->assign('data',$data);
 		$this->display('Home/Index/index');
+	}
+	public function show()
+	{
+		$id = $_GET['id'];
+		// print_r($id);die;
+		$db = new DB();
+		$data = $db->select("select * from home_index where `dz_id`='$id'");
+		$this->assign('data',$data);
+		$this->display('Home/Index/show');
+		//echo "404;拒绝访问！";
 	}
 	//段子
 	public function duanzi()

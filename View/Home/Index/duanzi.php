@@ -24,12 +24,12 @@
       <input class="text" type="text" name="s" placeholder="Search" value="">   
     </form>
     <ul class="nav-list">
-	  <li id="menu-item-1296" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1296"><a href="http://www.yzipi.com/category/ganhuo">干货</a></li>
-<li id="menu-item-1295" class="menu-item menu-item-type-taxonomy menu-item-object-category current-menu-item menu-item-1295"><a href="http://www.yzipi.com/category/duanzi">段子</a></li>
-<li id="menu-item-127" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-127"><a href="http://www.yzipi.com/yizpi1">D1.7</a></li>
-<li id="menu-item-1357" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1357"><a href="http://www.yzipi.com/about">关于</a></li>
-   	
-    </ul>	
+    <li id="menu-item-1296" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1296"><a href="index.php?c=Index&a=ganhuo">干货</a></li>
+<li id="menu-item-1295" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1295"><a href="index.php?c=Index&a=duanzi">段子</a></li>
+<li id="menu-item-127" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-127"><a href="index.php?c=Index&a=yizpi1">D1.7</a></li>
+<li id="menu-item-1357" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1357"><a href="index.php?c=Index&a=about">关于</a></li>
+    
+    </ul> 
   </nav>
 </header>
 <!--header-web--><div id="container-page">

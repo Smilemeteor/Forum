@@ -11,12 +11,12 @@
 <meta name="keywords" content="不死不活的混着, 在单位里等死, 年过40, 死工资">
 <link rel="shortcut icon" href="http://www.yzipi.com/wp-content/themes/yzipi/images/favicon.ico">
 <link rel="alternate" type="application/rss+xml" title="柚段子 » 送给那些在单位等死的人!评论Feed" href="http://www.yzipi.com/568.htm/feed">
-<link rel="stylesheet" id="sytle-css" href="./Public/Home/yizpi1_files/style.css" type="text/css" media="all">
-<script src="./Public/Home/yizpi1_files/hm.js"></script><script type="text/javascript" src="./Public/Home/yizpi1_files/html5shiv.js"></script>
-<script type="text/javascript" src="./Public/Home/yizpi1_files/selectivizr-min.js"></script>
-<script type="text/javascript" src="./Public/Home/yizpi1_files/jquery.min.js"></script>
-<script type="text/javascript" src="./Public/Home/yizpi1_files/jiazai.js"></script>
-<script type="text/javascript" src="./Public/Home/yizpi1_files/swiper.min.js"></script>
+<link rel="stylesheet" id="sytle-css" href="./Public/Home/show_files/style.css" type="text/css" media="all">
+<script src="./Public/Home/show_files/hm.js"></script><script type="text/javascript" src="./Public/Home/show_files/html5shiv.js"></script>
+<script type="text/javascript" src="./Public/Home/show_files/selectivizr-min.js"></script>
+<script type="text/javascript" src="./Public/Home/show_files/jquery.min.js"></script>
+<script type="text/javascript" src="./Public/Home/show_files/jiazai.js"></script>
+<script type="text/javascript" src="./Public/Home/show_files/swiper.min.js"></script>
 <link rel="prev" title="一旦你拥有网赚这能力，就可向自由出发" href="http://www.yzipi.com/433.htm">
 <link rel="next" title="别说你参加饭局很多，其实你在做无用社交" href="http://www.yzipi.com/542.htm">
 <link rel="canonical" href="http://www.yzipi.com/568.htm">
@@ -25,17 +25,16 @@
 <body>
 <header class="header-web gizle sabit">
   <nav>
-   <a href="index.php?c=Index&a=index" class="logo" title="柚段子" rel="home"><img src="./Public/Home/yizpi1_files/logo.png" alt="柚段子Logo"></a>
+   <a href="?a=Index&c=index" class="logo" title="柚段子" rel="home"><img src="./Public/Home/show_files/logo.png" alt="柚段子Logo"></a>
    <form method="get" class="search" action="http://www.yzipi.com/">
       <input class="text" type="text" name="s" placeholder="Search" value="">   
     </form>
-    <ul class="nav-list">
-    <li id="menu-item-1296" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1296"><a href="index.php?c=Index&a=ganhuo">干货</a></li>
+<ul class="nav-list">
+<li id="menu-item-1296" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1296"><a href="index.php?c=Index&a=ganhuo">干货</a></li>
 <li id="menu-item-1295" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1295"><a href="index.php?c=Index&a=duanzi">段子</a></li>
 <li id="menu-item-127" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-127"><a href="index.php?c=Index&a=yizpi1">D1.7</a></li>
 <li id="menu-item-1357" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1357"><a href="index.php?c=Index&a=about">关于</a></li>
-    
-    </ul> 	
+</ul> 
   </nav>
 </header>
 <!--header-web-->  <article class="box-single">
@@ -49,7 +48,7 @@
         <!--msccaddress-->
     </header>
         <div class="content-text">
-      <p><img src="./Public/Home/yizpi1_files/ji.jpg" alt="" width="3000" height="1667" class="alignnone size-full wp-image-572" srcset="http://www.yzipi.com/wp-content/uploads/2018/02/ji.jpg 3000w, http://www.yzipi.com/wp-content/uploads/2018/02/ji-1000x556.jpg 1000w, http://www.yzipi.com/wp-content/uploads/2018/02/ji-768x427.jpg 768w" sizes="(max-width: 3000px) 100vw, 3000px"></p>
+      <p><img src="./Public/Home/show_files/ji.jpg" alt="" width="3000" height="1667" class="alignnone size-full wp-image-572" srcset="http://www.yzipi.com/wp-content/uploads/2018/02/ji.jpg 3000w, http://www.yzipi.com/wp-content/uploads/2018/02/ji-1000x556.jpg 1000w, http://www.yzipi.com/wp-content/uploads/2018/02/ji-768x427.jpg 768w" sizes="(max-width: 3000px) 100vw, 3000px"></p>
 <p>拿死工资并不可怕，怕的是拿着死工资还一直等死，怕的是明知道自己在等死，还不愿学习，不敢改变，得过且过。其实，困住你的，是你自己，改变，什么时候开始都不晚。</p>
 <h1><em>1</em>无心改变，才是你最大的问题</h1>
 <p>张存每一天的生活都是这样的：</p>
@@ -115,7 +114,7 @@
             22</span>
         </a>
     </div>
-<script type="text/javascript" src="./Public/Home/yizpi1_files/zan.js"></script>
+<script type="text/javascript" src="./Public/Home/show_files/zan.js"></script>
 </div>
 	</div>
     <!--content_text-->
@@ -136,7 +135,7 @@
 
 
 <ol id="comment">
-  <li id="comment-144"> <span> <img src="./Public/Home/yizpi1_files/saved_resource" class="avatar avatar-120" height="120" width="120"> </span>
+  <li id="comment-144"> <span> <img src="./Public/Home/show_files/saved_resource" class="avatar avatar-120" height="120" width="120"> </span>
   <div class="mhcc">
     <address>
    匿名  2018.03.06  
@@ -144,7 +143,7 @@
         <p>真的是这么一回事</p>
   </div>
   </li><!-- #comment-## -->
-<li id="comment-125"> <span> <img src="./Public/Home/yizpi1_files/saved_resource" class="avatar avatar-120" height="120" width="120"> </span>
+<li id="comment-125"> <span> <img src="./Public/Home/show_files/saved_resource" class="avatar avatar-120" height="120" width="120"> </span>
   <div class="mhcc">
     <address>
    匿名  2018.02.27  
@@ -152,7 +151,7 @@
         <p>还写少一种人，那种人并不是在单位等死，而是看自已能不能把企业做死！</p>
   </div>
   <ul class="children">
-<li id="comment-126"> <span> <img src="./Public/Home/yizpi1_files/3bb0e5e6295d7b98e696b7fb1450d913" class="avatar avatar-120" height="120" width="120"> </span>
+<li id="comment-126"> <span> <img src="./Public/Home/show_files/3bb0e5e6295d7b98e696b7fb1450d913" class="avatar avatar-120" height="120" width="120"> </span>
   <div class="mhcc">
     <address>
    卖砖头的小女孩  2018.02.27  
@@ -162,7 +161,7 @@
   </li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
-<li id="comment-124"> <span> <img src="./Public/Home/yizpi1_files/saved_resource" class="avatar avatar-120" height="120" width="120"> </span>
+<li id="comment-124"> <span> <img src="./Public/Home/show_files/saved_resource" class="avatar avatar-120" height="120" width="120"> </span>
   <div class="mhcc">
     <address>
    匿名  2018.02.27  
@@ -177,7 +176,7 @@
 
                  <section class="list">
        <span class="titleimg"> <a href="http://www.yzipi.com/63.htm" target="_blank">
-  <img width="1000" height="556" src="./Public/Home/yizpi1_files/few-1000x556.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" srcset="http://www.yzipi.com/wp-content/uploads/2018/01/few-1000x556.jpg 1000w, http://www.yzipi.com/wp-content/uploads/2018/01/few-768x427.jpg 768w" sizes="(max-width: 1000px) 100vw, 1000px">  </a> </span>
+  <img width="1000" height="556" src="./Public/Home/show_files/few-1000x556.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" srcset="http://www.yzipi.com/wp-content/uploads/2018/01/few-1000x556.jpg 1000w, http://www.yzipi.com/wp-content/uploads/2018/01/few-768x427.jpg 768w" sizes="(max-width: 1000px) 100vw, 1000px">  </a> </span>
     <div class=" mecc">
     <h2 class="mecctitle"> <a href="http://www.yzipi.com/63.htm" target="_blank">
       给你一万元娶凤姐，和花10万娶范爷，你选？      </a> </h2>
@@ -197,9 +196,9 @@
 <footer id="dibu">
   <div class="dibu-main">
 	  <div class="bottomlist">
-      <div class="xinlan"> <a href="https://weibo.com/pocoe" target="_blank"><img src="./Public/Home/yizpi1_files/xinlan.png" alt="新浪微博" title="新浪微博"></a> </div>
+      <div class="xinlan"> <a href="https://weibo.com/pocoe" target="_blank"><img src="./Public/Home/show_files/xinlan.png" alt="新浪微博" title="新浪微博"></a> </div>
       <div class="weixin2">
-        <div class="weixin"><span>公众号 : Yzipi6</span> <img src="./Public/Home/yizpi1_files/weixin.png" alt="微信公众号" title="微信公众号"> <img src="./Public/Home/yizpi1_files/er2.png" class="xixii" alt="微信公众号"></div>
+        <div class="weixin"><span>公众号 : Yzipi6</span> <img src="./Public/Home/show_files/weixin.png" alt="微信公众号" title="微信公众号"> <img src="./Public/Home/show_files/er2.png" class="xixii" alt="微信公众号"></div>
       </div>
     </div>
 	
@@ -236,6 +235,6 @@
 	</script> 
 </footer>
 <!--dibu-->
-<script type="text/javascript" src="./Public/Home/yizpi1_files/comment-reply.min.js"></script>
-<script type="text/javascript" src="./Public/Home/yizpi1_files/wp-embed.min.js"></script>
+<script type="text/javascript" src="./Public/Home/show_files/comment-reply.min.js"></script>
+<script type="text/javascript" src="./Public/Home/show_files/wp-embed.min.js"></script>
 </body></html>
