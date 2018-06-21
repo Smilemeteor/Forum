@@ -7,8 +7,8 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
 <meta http-equiv="Cache-Control" content="no-siteapp" />
 <!--[if lt IE 9]>
-<script type="text/javascript" src="lib/html5shiv.js"></script>
-<script type="text/javascript" src="lib/respond.min.js"></script>
+<script type="text/javascript" src="Public/Admin/lib/html5shiv.js"></script>
+<script type="text/javascript" src="Public/Admin/lib/respond.min.js"></script>
 <![endif]-->
 <link rel="stylesheet" type="text/css" href="Public/Admin/static/h-ui/css/H-ui.min.css" />
 <link rel="stylesheet" type="text/css" href="Public/Admin/static/h-ui.admin/css/H-ui.admin.css" />
@@ -48,32 +48,37 @@
 				</tr>
 			</thead>
 			<tbody>
+				<?php foreach ($data as $value): ?>
+					
 				<tr class="text-c">
 					<td><input name="" type="checkbox" value=""></td>
-					<td>001</td>
-					<td>分类名称</td>
-					<td><a href="javascript:;" onClick="picture_edit('图库编辑','picture-show.html','10001')"><img width="210" class="picture-thumb" src="temp/200x150.jpg"></a></td>
-					<td class="text-l"><a class="maincolor" href="javascript:;" onClick="picture_edit('图库编辑','picture-show.html','10001')">现代简约 白色 餐厅</a></td>
-					<td class="text-c">标签</td>
-					<td>2014-6-11 11:11:42</td>
-					<td class="td-status"><span class="label label-success radius">已发布</span></td>
+					<td><?php echo $value['p_id']; ?></td>
+					<td><?php echo $value['p_type']; ?></td>
+					<td><a href="javascript:;" onClick="picture_edit('图库编辑','picture-show.html','10001')"><img width="210" class="picture-thumb" src="Public/Admin/temp/200x150.jpg"></a></td>
+					<td class="text-l"><a class="maincolor" href="javascript:;" onClick="picture_edit('图库编辑','picture-show.html','10001')"><?php echo $value['p_title']; ?></a></td>
+					<td class="text-c"><?php echo $value['p_key']; ?></td>
+					<td><?php echo $value['p_time']; ?></td>
+					<td class="td-status"><span class="label label-success radius"><?php echo $value['p_state']; ?></span></td>
 					<td class="td-manage"><a style="text-decoration:none" onClick="picture_stop(this,'10001')" href="javascript:;" title="下架"><i class="Hui-iconfont">&#xe6de;</i></a> <a style="text-decoration:none" class="ml-5" onClick="picture_edit('图库编辑','picture-add.html','10001')" href="javascript:;" title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a> <a style="text-decoration:none" class="ml-5" onClick="picture_del(this,'10001')" href="javascript:;" title="删除"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
 				</tr>
+
+				<?php endforeach ?>
+
 			</tbody>
 		</table>
 	</div>
 </div>
 
 <!--_footer 作为公共模版分离出去-->
-<script type="text/javascript" src="lib/jquery/1.9.1/jquery.min.js"></script> 
-<script type="text/javascript" src="lib/layer/2.4/layer.js"></script>
-<script type="text/javascript" src="static/h-ui/js/H-ui.min.js"></script> 
-<script type="text/javascript" src="static/h-ui.admin/js/H-ui.admin.js"></script> <!--/_footer 作为公共模版分离出去-->
+<script type="text/javascript" src="Public/Admin/lib/jquery/1.9.1/jquery.min.js"></script> 
+<script type="text/javascript" src="Public/Admin/lib/layer/2.4/layer.js"></script>
+<script type="text/javascript" src="Public/Admin/static/h-ui/js/H-ui.min.js"></script> 
+<script type="text/javascript" src="Public/Admin/static/h-ui.admin/js/H-ui.admin.js"></script> <!--/_footer 作为公共模版分离出去-->
 
 <!--请在下方写此页面业务相关的脚本-->
-<script type="text/javascript" src="lib/My97DatePicker/4.8/WdatePicker.js"></script> 
-<script type="text/javascript" src="lib/datatables/1.10.0/jquery.dataTables.min.js"></script> 
-<script type="text/javascript" src="lib/laypage/1.2/laypage.js"></script>
+<script type="text/javascript" src="Public/Admin/lib/My97DatePicker/4.8/WdatePicker.js"></script> 
+<script type="text/javascript" src="Public/Admin/lib/datatables/1.10.0/jquery.dataTables.min.js"></script> 
+<script type="text/javascript" src="Public/Admin/lib/laypage/1.2/laypage.js"></script>
 <script type="text/javascript">
 $('.table-sort').dataTable({
 	"aaSorting": [[ 1, "desc" ]],//默认第几个排序

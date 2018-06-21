@@ -7,8 +7,8 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
 <meta http-equiv="Cache-Control" content="no-siteapp" />
 <!--[if lt IE 9]>
-<script type="text/javascript" src="lib/html5shiv.js"></script>
-<script type="text/javascript" src="lib/respond.min.js"></script>
+<script type="text/javascript" src="Public/Admin/lib/html5shiv.js"></script>
+<script type="text/javascript" src="Public/Admin/lib/respond.min.js"></script>
 <![endif]-->
 <link rel="stylesheet" type="text/css" href="Public/Admin/static/h-ui/css/H-ui.min.css" />
 <link rel="stylesheet" type="text/css" href="Public/Admin/static/h-ui.admin/css/H-ui.admin.css" />
@@ -16,7 +16,7 @@
 <link rel="stylesheet" type="text/css" href="Public/Admin/static/h-ui.admin/skin/default/skin.css" id="skin" />
 <link rel="stylesheet" type="text/css" href="Public/Admin/static/h-ui.admin/css/style.css" />
 <!--[if IE 6]>
-<script type="text/javascript" src="lib/DD_belatedPNG_0.0.8a-min.js" ></script>
+<script type="text/javascript" src="Public/Admin/lib/DD_belatedPNG_0.0.8a-min.js" ></script>
 <script>DD_belatedPNG.fix('*');</script>
 <![endif]-->
 <title>品牌管理</title>
@@ -58,8 +58,8 @@
 					<td><input name="" type="checkbox" value=""></td>
 					<td>1</td>
 					<td><input type="text" class="input-text text-c" value="1"></td>
-					<td><img src="temp/brand/dongpeng.jpeg"></td>
-					<td class="text-l"><img title="国内品牌" src="static/h-ui.admin/images/cn.gif"> 东鹏</td>
+					<td><img src="Public/Admin/temp/brand/dongpeng.jpeg"></td>
+					<td class="text-l"><img title="国内品牌" src="Public/Admin/static/h-ui.admin/images/cn.gif"> 东鹏</td>
 					<td class="text-l">东鹏陶瓷被评为“中国名牌”、“国家免检产品”、“中国驰名商标”、http://www.dongpeng.net/</td>
 					<td class="f-14 product-brand-manage"><a style="text-decoration:none" onClick="product_brand_edit('品牌编辑','codeing.html','1')" href="javascript:;" title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a> <a style="text-decoration:none" class="ml-5" onClick="active_del(this,'10001')" href="javascript:;" title="删除"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
 				</tr>
@@ -68,15 +68,15 @@
 	</div>
 </div>
 <!--_footer 作为公共模版分离出去-->
-<script type="text/javascript" src="lib/jquery/1.9.1/jquery.min.js"></script>
-<script type="text/javascript" src="lib/layer/2.4/layer.js"></script>
-<script type="text/javascript" src="static/h-ui/js/H-ui.min.js"></script>
-<script type="text/javascript" src="static/h-ui.admin/js/H-ui.admin.js"></script> <!--/_footer 作为公共模版分离出去-->
+<script type="text/javascript" src="Public/Admin/lib/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="Public/Admin/lib/layer/2.4/layer.js"></script>
+<script type="text/javascript" src="Public/Admin/static/h-ui/js/H-ui.min.js"></script>
+<script type="text/javascript" src="Public/Admin/static/h-ui.admin/js/H-ui.admin.js"></script> <!--/_footer 作为公共模版分离出去-->
 
 <!--请在下方写此页面业务相关的脚本-->
-<script type="text/javascript" src="lib/My97DatePicker/4.8/WdatePicker.js"></script> 
-<script type="text/javascript" src="lib/datatables/1.10.0/jquery.dataTables.min.js"></script> 
-<script type="text/javascript" src="lib/laypage/1.2/laypage.js"></script>
+<script type="text/javascript" src="Public/Admin/lib/My97DatePicker/4.8/WdatePicker.js"></script> 
+<script type="text/javascript" src="Public/Admin/lib/datatables/1.10.0/jquery.dataTables.min.js"></script> 
+<script type="text/javascript" src="Public/Admin/lib/laypage/1.2/laypage.js"></script>
 <script type="text/javascript">
 $('.table-sort').dataTable({
 	"aaSorting": [[ 1, "desc" ]],//默认第几个排序

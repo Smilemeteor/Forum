@@ -9,6 +9,8 @@ class DB
 		$db = C('db');
 		$this->pdo=new \pdo('mysql:host='.$db['host'].';dbname='.$db['dbname'],$db['username'],$db['password']);
 	}
+
+    //分页？
   
 	public function select($sql)
 	{
@@ -36,47 +38,13 @@ class DB
         $sql .= trim($filed, ',').')'.trim($value, ',').')';
         return $this->pdo->exec($sql);
     }
-     public function add($table_name,$parameters)
-    {
-        $sql = 'insert into '.$table_name;
 
-        $filed = '(';
-        $value = " values (";
-        foreach ($parameters as $key => $val) {
-            $filed .= $key.',';
-            $value .= "'".$val."'".",";
-         }
-
-        $sql .= trim($filed, ',').')'.trim($value, ',').')';
- 
-        return $this->pdo()->exec($sql);
-
-    }
-
-
-    public function findAll($pdo,$table_name)
-    {
-        $sql = "select * from " . $table_name . "";
-
-      $data=$pdo->query($sql)->fetchAll();
-      $arr = array();
-          foreach ($data as $key => $value) {
-              $arr[$key]['user'] = $data[$key]['user'];
-              $arr[$key]['title'] = $data[$key]['title'];
-              $arr[$key]['content'] = $data[$key]['content'];
-              $arr[$key]['id'] = $data[$key]['id'];
-               $arr[$key]['date'] = $data[$key]['date'];
-          }
-          return $arr;
-      
-    }
-
-    public function delete($pdo,$table_name,$where)
+    public function delete($table_name,$where)
     {
 
-       $sql="delete from ".$table_name."where='$where'";
+       $sql="delete from ".$table_name." where ".$where;
 
-       $res=$pdo->exec($sql);
+       $res=$this->pdo->exec($sql);
 
        return $res;
     }
@@ -90,4 +58,20 @@ class DB
         return $res;
     }
 
+    public function one($table_name,$where)
+    {
+        $sql = "select * from " . $table_name." where ".$where;
+
+        $res=$this->pdo->query($sql)->fetchAll();
+
+        return $res;
+    }
+
+    // public function getOne($resumn,$tablename,$where="1"){
+    //     $sql = "select $resumn from $tablename where $where";
+    //     $rs = $this->pdo->query($sql);
+    //     $rs->setFetchMode(PDO::FETCH_ASSOC);
+    //     $res = $rs->fetchAll();
+    //     return  $res;
+    // }
 }

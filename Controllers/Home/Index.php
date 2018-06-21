@@ -2,12 +2,13 @@
 namespace Controllers\Home;
 use Controller\Controller;
 use Model\DB;
+use Model\Page;
 class Index extends Controller
 {
 	public function index()
 	{
 		$db = new DB();
-		$data=$db->show('Home_index');
+		$data=$db->show('article_list');
 		$this->assign('data',$data);
 		$this->display('Home/Index/index');
 	}
@@ -16,10 +17,22 @@ class Index extends Controller
 		$id = $_GET['id'];
 		// print_r($id);die;
 		$db = new DB();
-		$data = $db->select("select * from home_index where `dz_id`='$id'");
+		$data = $db->one('article_list',"`article_id`='$id'");
 		$this->assign('data',$data);
 		$this->display('Home/Index/show');
-		//echo "404;拒绝访问！";
+	}
+	public function page()
+	{
+		@$db = mysql_connect('localhost', 'root', 'root') or
+		die("Could not connect to database.");//连接数据库
+		mysql_query("set names 'utf8'");//输出中文
+		mysql_select_db('test');    //选择数据库
+		$sql = "select * from `caiji`"; //一个简单的查询
+		$page = new Page();
+		$data_page =$page->Page('',$data,$_GET['page'],5,"?page=");		
+		$this->assign('data_page',$data_page);
+		$this->assign('data_list',$data_list);
+		$this->display('Home/Index/page');
 	}
 	//段子
 	public function duanzi()

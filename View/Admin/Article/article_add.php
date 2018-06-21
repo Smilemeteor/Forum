@@ -7,8 +7,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
 <meta http-equiv="Cache-Control" content="no-siteapp" />
-<link rel="Bookmark" href="Public/Admin//favicon.ico" >
-<link rel="Shortcut Icon" href="Public/Admin//favicon.ico" />
+<link rel="Bookmark" href="Public/Admin/favicon.ico" >
+<link rel="Shortcut Icon" href="Public/Admin/favicon.ico" />
 <!--[if lt IE 9]>
 <script type="text/javascript" src="lib/html5shiv.js"></script>
 <script type="text/javascript" src="lib/respond.min.js"></script>
@@ -30,7 +30,7 @@
 </head>
 <body>
 <article class="page-container">
-	<form class="form form-horizontal" id="form-article-add">
+	<form class="form form-horizontal" id="form-article-add" action="?c=Article&a=article_Add_do" method="post">
 		<div class="row cl">
 			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>文章标题：</label>
 			<div class="formControls col-xs-8 col-sm-9">
