@@ -12,9 +12,4 @@ class Index extends Controller
 	{
 		$this->display('Admin/Index/welcome');
 	}
-	//评论区的意见反馈
-	public function feedback_list()
-	{
-		$this->display('Admin/Index/feedback_list');
-	}
 }

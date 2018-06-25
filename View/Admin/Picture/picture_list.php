@@ -41,7 +41,8 @@
 					<th width="100">分类</th>
 					<th width="100">封面</th>
 					<th>图片名称</th>
-					<th width="150">Tags</th>
+					<td>图片作者</td>
+					<td>图片来源</td>
 					<th width="150">更新时间</th>
 					<th width="60">发布状态</th>
 					<th width="100">操作</th>
@@ -52,18 +53,17 @@
 					
 				<tr class="text-c">
 					<td><input name="" type="checkbox" value=""></td>
-					<td><?php echo $value['p_id']; ?></td>
-					<td><?php echo $value['p_type']; ?></td>
-					<td><a href="javascript:;" onClick="picture_edit('图库编辑','picture-show.html','10001')"><img width="210" class="picture-thumb" src="Public/Admin/temp/200x150.jpg"></a></td>
-					<td class="text-l"><a class="maincolor" href="javascript:;" onClick="picture_edit('图库编辑','picture-show.html','10001')"><?php echo $value['p_title']; ?></a></td>
-					<td class="text-c"><?php echo $value['p_key']; ?></td>
-					<td><?php echo $value['p_time']; ?></td>
-					<td class="td-status"><span class="label label-success radius"><?php echo $value['p_state']; ?></span></td>
+					<td><?php echo $value['picture_id']; ?></td>
+					<td><?php echo $value['picture_type']; ?></td>
+					<td><a href="javascript:;" onClick="picture_edit('图库编辑','?c=picture&a=picture_show','10001')"><img width="210" class="picture-thumb" src="<?php echo $value['tpic']; ?>"></a></td>
+					<td class="text-l"><a class="maincolor" href="javascript:;" onClick="picture_edit('图库编辑','picture-show.html','10001')">
+						<?php echo $value['picture_title']; ?></a></td>
+					<td><?php echo $value['author']; ?></td><td><?php echo $value['source']; ?></td>
+					<td><?php echo @date("Y-m-d H:i:s",$val['picture_datetime']); ?></td>
+					<td class="td-status"><span class="label label-success radius">未审核</span></td>
 					<td class="td-manage"><a style="text-decoration:none" onClick="picture_stop(this,'10001')" href="javascript:;" title="下架"><i class="Hui-iconfont">&#xe6de;</i></a> <a style="text-decoration:none" class="ml-5" onClick="picture_edit('图库编辑','picture-add.html','10001')" href="javascript:;" title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a> <a style="text-decoration:none" class="ml-5" onClick="picture_del(this,'10001')" href="javascript:;" title="删除"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
 				</tr>
-
 				<?php endforeach ?>
-
 			</tbody>
 		</table>
 	</div>

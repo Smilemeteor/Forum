@@ -5,10 +5,16 @@ use Model\DB;
 use Model\Page;
 class Index extends Controller
 {
+	public function search()
+	{
+			
+		$this->display('Home/Index/search');
+	}
+
 	public function index()
 	{
 		$db = new DB();
-		$data=$db->show('article_list');
+		$data=$db->show('article');
 		$this->assign('data',$data);
 		$this->display('Home/Index/index');
 	}
@@ -17,7 +23,7 @@ class Index extends Controller
 		$id = $_GET['id'];
 		// print_r($id);die;
 		$db = new DB();
-		$data = $db->one('article_list',"`article_id`='$id'");
+		$data = $db->one('article',"`article_id`='$id'");
 		$this->assign('data',$data);
 		$this->display('Home/Index/show');
 	}

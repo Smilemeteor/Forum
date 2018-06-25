@@ -19,7 +19,7 @@
 <body>
 <header class="header-web">
   <nav>
-   <a href="index.php?c=Index&a=index" class="logo" title="柚段子" rel="home"><img src="./Public/Home/ganhuo_files/logo.png" alt="柚段子Logo"></a>
+   <a href="index.php?c=Index&a=index" class="logo" title="柚段子" rel="home"><img src="./Public/Home/index_files/logo.png" alt="柚段子Logo"></a>
    <form method="get" class="search" action="http://www.yzipi.com/">
       <input class="text" type="text" name="s" placeholder="Search" value="">   
     </form>

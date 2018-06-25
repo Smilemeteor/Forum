@@ -46,8 +46,8 @@
 				<tr class="text-c">
 					<th width="25"><input type="checkbox" name="" value=""></th>
 					<th width="80">ID</th>
-					<th>标题</th>
-					<th width="80">分类</th>
+					<th>文章标题</th>
+					<th width="80">类型</th>
 					<th width="80">来源</th>
 					<th width="120">更新时间</th>
 					<th width="75">浏览次数</th>
@@ -60,13 +60,13 @@
 				<tr class="text-c">
 					<td><input type="checkbox" value="" name=""></td>
 					<td><?php echo $value['article_id']; ?></td>
-					<td class="text-l"><u style="cursor:pointer" class="text-primary" onClick="article_edit('查看','?c=Article&a=article_Show&&id=<?php echo $value['article_id'];?>','10001')" title="查看"><?php echo $value['articletitle']; ?></u></td>
-					<td><?php echo $value['articletype']; ?></td>
+					<td class="text-l"><u style="cursor:pointer" class="text-primary" onClick="article_edit('查看','?c=Article&a=article_Show&&id=<?php echo $value['article_id'];?>','10001')" title="查看"><?php echo $value['article_title']; ?></u></td>
+					<td><?php echo $value['type_id']; ?></td>
 					<td><?php echo $value['sources']; ?></td>
-					<td><?php echo $value['datetime']; ?></td>
-					<td><?php echo $value['view_count']; ?></td>
-					<td class="td-status"><span class="label label-success radius"><?php echo $value['publish_status']; ?></span></td>
-					<td class="f-14 td-manage"><a style="text-decoration:none" onClick="article_stop(this,'10001')" href="javascript:;" title="下架"><i class="Hui-iconfont">&#xe6de;</i></a> <a style="text-decoration:none" class="ml-5" onClick="article_edit('资讯编辑','article-add.html','10001')" href="javascript:;" title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a>
+					<td><?php echo @date("Y-m-d H:i:s",$val['datetime']); ?></td>
+					<td>999</td>
+					<td class="td-status"><span class="label label-success radius">未发布</span></td>
+					<td class="f-14 td-manage"><a style="text-decoration:none" onClick="article_stop(this,'10001')" href="javascript:;" title="下架"><i class="Hui-iconfont">&#xe6de;</i></a> <a style="text-decoration:none" class="ml-5" onClick="article_edit('资讯编辑','article-add.html','10001')" href="?c=Article&a=article_upd&&id=<?php echo $value['article_id'];?>" title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a>
 					<a style="text-decoration:none" class="ml-5"  href="?c=Article&a=article_Del&&id=<?php echo $value['article_id'];?>" title="删除"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
 				</tr>
 				<?php } ?>

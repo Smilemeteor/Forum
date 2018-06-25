@@ -14,7 +14,7 @@ function __autoload($className)
 
 function  url($controller,$action,$param=[])
 {   
-	$url=APP_HOST.'/MVC/index.php?c='.$controller.'&a='.$action;
+	$url=APP_HOST.'./index.php?c='.$controller.'&a='.$action;
 
     if(!empty($param)){
     	foreach($param as $key=>$val){
@@ -27,20 +27,20 @@ function  url($controller,$action,$param=[])
 
 function redirect($url)
 {
-	return APP_HOST.'/MVC/Public/'.$url;
+	return APP_HOST.'/Forum/Public/'.$url;
 }
 
 function getImg($imgSrc)
 {
-	return APP_HOST.'/MVC/Public/img/'.$imgSrc;
+	return APP_HOST.'/Forum/Public/img/'.$imgSrc;
 }
 
 function getJs($jsSrc)
 {
-	return APP_HOST.'/MVC/Public/js/'.$jsSrc;
+	return APP_HOST.'/Forum/Public/js/'.$jsSrc;
 }
 
 function getCss($cssSrc)
 {
-	return APP_HOST.'/MVC/Public/css/'.$cssSrc;
+	return APP_HOST.'/Forum/Public/css/'.$cssSrc;
 }
