@@ -73,7 +73,7 @@
 		</dd>
 	</dl>
 		<dl id="menu-picture">
-			<dt><i class="Hui-iconfont">&#xe613;</i> 图片管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+		 	<dt><i class="Hui-iconfont">&#xe613;</i> 图片管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
 			<dd>
 				<ul>
 					<li><a data-href="index.php?c=Picture&a=picture_list" data-title="图片管理" href="javascript:void(0)">图片管理</a></li>
@@ -107,6 +107,16 @@
 				<ul>
 					<li><a data-href="index.php?c=Admin&a=admin_role" data-title="角色管理" href="javascript:void(0)">角色管理</a></li>
 					<li><a data-href="index.php?c=Admin&a=admin_permission" data-title="权限管理" href="javascript:void(0)">权限管理</a></li>
+					<li><a data-href="index.php?c=Admin&a=admin_list" data-title="管理员列表" href="javascript:void(0)">管理员列表</a></li>
+			</ul>
+		</dd>
+	</dl></dl>
+		<dl id="menu-member">
+			<dt><i class="Hui-iconfont">&#xe6e2;</i> 回收站<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+			<dd>
+				<ul>
+					<li><a data-href="index.php?c=Admin&a=admin_role" data-title="角色管理" href="javascript:void(0)">文章管理</a></li>
+					<li><a data-href="index.php?c=Admin&a=admin_permission" data-title="权限管理" href="javascript:void(0)">图片管理</a></li>
 					<li><a data-href="index.php?c=Admin&a=admin_list" data-title="管理员列表" href="javascript:void(0)">管理员列表</a></li>
 			</ul>
 		</dd>

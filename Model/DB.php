@@ -12,10 +12,25 @@ class DB
 
     //分页？
     
+    public function search($table_name,$keyword)
+    {
+        $sql = "select * from ". $table_name ." where article_title like '%" .$keyword."%'";
+        //print_r($sql);
+        $res = $this->pdo->query($sql)->fetchAll();
+        return $res;
+
+    }
+
     public function upd($sql)
     {
         $res = $this->pdo->query($sql);
         return $res->exec();
+    }
+
+    public function upddian($table,$data,$where)
+    {
+        $sql = "UPDATE ".$table." SET ".$data." WHERE ".$where;
+        return $res=$this->pdo->exec($sql);
     }
 
 	public function select($sql)
@@ -61,6 +76,16 @@ class DB
        return $res;
     }
 
+    public function count($table_name)
+    {
+        $sql="select count(*) from " .$table_name;
+
+        $res=$this->pdo->query($sql)->fetchAll();
+
+        return $res;
+    }
+    
+
     public function show($table_name)
     {
         $sql = "select * from " . $table_name."";
@@ -79,11 +104,16 @@ class DB
         return $res;
     }
 
-    // public function upd($sql)
-    // {
-    //     $res = $this->pdo->query($sql);
-    //     return $res->exec();
-    // }
+    public function update($table,$data,$where)
+    {
+        $str = '';
+        foreach ($data as $k => $v) {
+            $str .="`$k`='$v',";
+        }
+        $str = rtrim($str,',');
+        $sql = "UPDATE `$table` SET $str WHERE $where";
+        return $res=$this->pdo->exec($sql);
+    }
 
     public  function upload($file)
     {

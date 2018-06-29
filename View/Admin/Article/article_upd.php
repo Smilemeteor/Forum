@@ -19,9 +19,10 @@
 </head>
 <body>
 <article class="page-container"> 
+		
 	<form class="form form-horizontal" action="?c=Article&a=article_Upd_do" method="post">
-		<?php foreach ($data as $value): ?>
-
+	<?php foreach ($data as $value): ?>
+		<input type="hidden" name="article_id" value="<?php echo $value['article_id'] ?>">
 		<div class="row cl">
 			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>文章标题：</label>
 			<div class="formControls col-xs-8 col-sm-9">
@@ -54,7 +55,7 @@
 		<div class="row cl">
 			<label class="form-label col-xs-4 col-sm-2">文章摘要：</label>
 			<div class="formControls col-xs-8 col-sm-9">
-				<textarea name="article_abstract" value="<?php echo $value['article_abstract']; ?>" cols="" rows="" class="textarea"  placeholder="说点什么...最少输入10个字符" datatype="*10-100" dragonfly="true" nullmsg="备注不能为空！" onKeyUp="$.Huitextarealength(this,200)"></textarea>
+				<textarea name="article_abstract" value="<?php echo $v['article_abstract']; ?>" cols="" rows="" class="textarea"  placeholder="说点什么...最少输入10个字符" datatype="*10-100" dragonfly="true" nullmsg="备注不能为空！" onKeyUp="$.Huitextarealength(this,200)"><?php echo $value['article_abstract'] ?></textarea>
 				<p class="textarea-numberbar"><em class="textarea-length">0</em>/200</p>
 			</div>
 		</div>
@@ -79,7 +80,7 @@
 				</div>
 			</div>
 		</div>
-		<?php endforeach ?>
+	<?php endforeach ?>
 <!-- 		<div class="row cl">
 			<label class="form-label col-xs-4 col-sm-2">文章内容：</label>
 			<div class="formControls col-xs-8 col-sm-9"> 

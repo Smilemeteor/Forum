@@ -19,7 +19,7 @@
 </head>
 <body>
 <article class="page-container"> 
-	<form class="form form-horizontal" action="?c=Article&a=article_Add_do" method="post">
+	<form class="form form-horizontal" id="form-article-add" action="?c=Article&a=article_Add_do" method="post">
 		<div class="row cl">
 			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>文章标题：</label>
 			<div class="formControls col-xs-8 col-sm-9">
@@ -36,9 +36,9 @@
 			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>文章类型：</label>
 			<div class="formControls col-xs-8 col-sm-9"> <span class="select-box">
 				<select name="type_id" class="select">
-					<option value="0">全部类型</option>
-					<option value="1">干货</option>
-					<option value="2">段子</option>
+					<option value="全部类型">全部类型</option>
+					<option value="干货">干货</option>
+					<option value="段子">段子</option>
 				</select>
 				</span> 
 			</div>
@@ -77,12 +77,12 @@
 				</div>
 			</div>
 		</div>
-<!-- 		<div class="row cl">
+		<div class="row cl">
 			<label class="form-label col-xs-4 col-sm-2">文章内容：</label>
 			<div class="formControls col-xs-8 col-sm-9"> 
-				<script id="editor" type="text/plain" name="" style="width:100%;height:400px;"></script> 
+			<textarea id="editor" type="text/plain" name="article_content" style="width:100%;height:400px;"></textarea>
 			</div>
-		</div> -->
+		</div>
 		<div class="row cl">
 			<div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-2">
 				<button onClick="article_save_submit();" class="btn btn-primary radius" type="submit"><i class="Hui-iconfont">&#xe632;</i> 保存并提交审核</button>
